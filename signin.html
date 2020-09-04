@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .home {
+            font-size: 40px;
+            color: #d8d8d8;
+            margin-left: 45%;
+        }
+
+        .form-container {
+            width: 30%;
+            margin: 80px auto;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 2px 5px #cacaca;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            font-size: 16px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <a href="home.html" class="home"><i class="fas fa-home"></i></a>
+        <form action="" method="post">
+            <h2 style="text-align: center;">Sign In</h2>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
